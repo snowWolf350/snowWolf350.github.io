@@ -3,3 +3,18 @@
   padding: = 0;
   box-sizing: border-box; 
 }
+body{
+  overflow:hidden;
+  font-family:Arial,sans-serif;
+  color:white;
+}
+
+#bg-video{
+  position:fixed;
+  right:0;
+  left:0;
+  min-width:100%;
+  min-height:100%;
+  object-fit: cover;
+  z-index: -2;
+}
