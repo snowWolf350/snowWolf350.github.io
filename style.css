@@ -27,8 +27,8 @@ body{
 }
 .overlay{
   position:absolute;
-  top: 25%;
-  right: 10%;
+  top: 10%;
+  right: 2%;
   width:30%;
   height:70%;
   background:rgba(2,48,71,.95);
