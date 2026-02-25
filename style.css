@@ -6,7 +6,7 @@
 body{
   overflow:hidden;
   font-family:'Segoe UI',sans-serif;
-  color:#ffe9d6;
+  color:#219EBC;
 }
 
 #bg-video{
@@ -31,6 +31,6 @@ body{
   right: 10%;
   width:30%;
   height:70%;
-  background:rgba(225,215,181,.95);
+  background:rgba(2,48,71,.95);
   z-index:-4;
 }
