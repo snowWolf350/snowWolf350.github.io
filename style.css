@@ -26,9 +26,9 @@ body{
   text-align:left;
 }
 .overlay{
-  position:fixed;
-  top: 50;
-  right: 20;
+  position:absolute;
+  top: 50%;
+  right: 30%;
   width:30%;
   height:50%;
   background:rgba(225,215,181,.95);
