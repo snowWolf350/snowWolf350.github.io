@@ -27,10 +27,10 @@ body{
 }
 .overlay{
   position:absolute;
-  top: 50%;
-  right: 30%;
+  top: 25%;
+  right: 10%;
   width:30%;
-  height:50%;
+  height:70%;
   background:rgba(225,215,181,.95);
   z-index:-4;
 }
