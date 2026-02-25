@@ -25,3 +25,11 @@ body{
   transform:translateY(-50%);
   text-align:left;
 }
+.overlay{
+  position:fixed;
+  top: 30;
+  right: 20;
+  width:30%;
+  height:50%;
+  background:rgba(225,223,190,.95);
+}
