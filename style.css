@@ -20,8 +20,8 @@ body{
 }
 .name{
   position:absolute;
-  top:50%;
-  right:10%;
+  top:25%;
+  right:30%;
   transform:translateY(-50%);
   text-align:left;
 }
