@@ -1,17 +1,20 @@
-function switchTab(tabId) {
+const tabs = document.querySelectorAll(".tab");
+const contents = document.querySelectorAll(".content");
 
-    // Remove active class from all content
-    document.querySelectorAll('.tab-content')
-        .forEach(el => el.classList.remove('active'));
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
 
-    // Remove active class from all buttons
-    document.querySelectorAll('.tab')
-        .forEach(el => el.classList.remove('active'));
+        // Remove active from all buttons
+        tabs.forEach(btn => btn.classList.remove("active"));
 
-    // Show selected tab
-    document.getElementById(tabId)
-        .classList.add('active');
+        // Hide all content
+        contents.forEach(section => section.classList.remove("active"));
 
-    // Highlight correct button
-    event.target.classList.add('active');
-}
+        // Activate clicked button
+        tab.classList.add("active");
+
+        // Show corresponding content
+        const target = document.getElementById(tab.dataset.tab);
+        target.classList.add("active");
+    });
+});
