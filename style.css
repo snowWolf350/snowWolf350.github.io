@@ -31,7 +31,41 @@ html, body {
 .bottom-section {
     height: 100vh;
     background: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tab-buttons {
+    margin-top: 20px;
+}
+
+.tab {
+    padding: 10px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #b4f06d;
+    font-weight: bold;
+}
+
+.tab.active {
+    background: white;
+}
+
+.tab-content {
+    margin-top: 40px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
 }
