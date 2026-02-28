@@ -15,10 +15,11 @@ html, body {
 }
 
 .title {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    height: 100vh;   /* This makes it full screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .name{
     font-size:4rem;
