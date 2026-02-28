@@ -15,40 +15,8 @@ body {
 }
 
 .title {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position:absolute;
+    top:50%;
+    left:50%;
 }
 
-.projects {
-    min-height: 100vh;
-    background: rgba(0,0,0,0.8);
-    padding: 50px;
-}
-
-.tabs {
-    margin-bottom: 20px;
-}
-
-.tab {
-    padding: 10px 20px;
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-}
-
-.tab.active {
-    background: white;
-    color: black;
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
-}
