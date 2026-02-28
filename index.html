@@ -5,22 +5,40 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
+        <!-- Background Video -->
         <video autoplay muted loop playsinline id = "bg-video">
             <source src="video/finalRenderLooping.mp4" type="video/mp4">
         </video>
-        <div class = "overlay">
-            <div class = "menu">
-            <div class = "name">
-            <h1 >Pranet</h1>
+        <!-- Title/name -->
+        <section class = "title">
+            <h1>Pranet v</h1>
+            <p>Game Developer | Content Creator | Student</p>
+        </section>
+
+        <section class = "projects">
+            <!-- Tabs -->
+            <div class = "tabs">
+                <button class = "tab active" onclick = "switchTab('unity')">Unity</button>
+                <button class = "tab" onclick = "switchTab('blender')">Blender</button>
+                <button class = "tab" onclick = "switchTab('info')">Character Sheet</button>
             </div>
-            
-            <div class = "buttons">
-            <button>Game Development</button>
-            <button>3 D Modelling</button>
-            <button>Character Stats</button>
+            <!-- Tab Content -->
+            <div id="unity" class="tab-content active">
+            <h2>Unity Projects</h2>
+            <p>Your Space Invaders, 2D Platformer etc.</p>
             </div>
+
+            <div id="blender" class="tab-content">
+            <h2>Blender Projects</h2>
+            <p>Your renders, animations etc.</p>
             </div>
-        </div>
-        </div>
+
+            <div id="info" class="tab-content">
+            <h2>About Me</h2>
+            <p>Your info here.</p>
+            </div>
+        </section>
+
+        <script src = "script.js"></script>
     </body>
 </html>
