@@ -29,7 +29,7 @@ html, body {
     font-size:2rem;
 }
 .bottom-section {
-    height: 100vh;
+    min-height: 100vh;
     background: orange;
     padding: 40px;
     box-sizing: border-box;
@@ -77,6 +77,7 @@ html, body {
     width: 300px;
     background: #111;
     border: 2px solid #444;
+    border-radius: 12px;
     padding: 20px;
     text-align: center;
     text-decoration: none;
@@ -86,7 +87,8 @@ html, body {
 
 .project-card img {
     width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
     margin-bottom: 15px;
 }
 
