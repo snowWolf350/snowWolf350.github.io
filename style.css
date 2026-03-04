@@ -75,8 +75,8 @@ html, body {
 
 .project-card {
     width: 300px;
-    background: #111;
-    border: 2px solid #444;
+    background: #8ECAE6;
+    border: 6px solid #219EBC;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -99,4 +99,10 @@ html, body {
 
 .content.active {
     display: block;
+}
+h3{
+    font-size : 2rem;
+}
+p{
+    font-size : 1.5rem;
 }
