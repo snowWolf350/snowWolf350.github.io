@@ -30,7 +30,7 @@ html, body {
 }
 .bottom-section {
     min-height: 100vh;
-    background: orange;
+    background: beige;  
     padding: 40px;
     box-sizing: border-box;
 }
@@ -102,6 +102,9 @@ html, body {
 }
 h3{
     font-size : 2rem;
+}
+h2{
+    color:#219EBC;
 }
 p{
     font-size : 1.5rem;
