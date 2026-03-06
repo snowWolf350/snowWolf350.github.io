@@ -15,7 +15,7 @@ html, body {
 }
 
 .title {
-    height: 100vh;   /* This makes it full screen */
+    height: 90vh;   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,13 +45,13 @@ html, body {
 }
 
 .tab {
-    padding: 10px 25px;
+    padding: 12px 35px;
     margin: 0 10px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     background: #b4f06d;
-    font-weight: bold;
+    font-size : 2rem;
 }
 
 .tab.active {
