@@ -74,11 +74,12 @@ html, body {
 }
 
 .project-card {
-    width: 300px;
+    width: 400px;
+    height: 430px;
     background: #8ECAE6;
     border: 6px solid #219EBC;
     border-radius: 12px;
-    padding: 20px;
+    padding: 45px;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -87,9 +88,9 @@ html, body {
 
 .project-card img {
     width: 100%;
-    height: 180px;
+    height: 250px;
     object-fit: cover;
-    margin-bottom: 15px;
+    border-radius:20px;
 }
 
 .project-card:hover {
@@ -101,10 +102,11 @@ html, body {
     display: block;
 }
 h3{
-    font-size : 2rem;
+    font-size : 2.5rem;
 }
 h2{
     color:#219EBC;
+    font-size:35px;
 }
 p{
     font-size : 1.5rem;
