@@ -1,20 +1,23 @@
 const tabs = document.querySelectorAll(".tab");
 const contents = document.querySelectorAll(".content");
+const bottomSection = document.querySelector(".bottom-section");
 
 tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
+    tab.addEventListener("click", (e) => {
 
-        // Remove active from all buttons
+        // Remove active states
         tabs.forEach(btn => btn.classList.remove("active"));
-
-        // Hide all content
         contents.forEach(section => section.classList.remove("active"));
 
-        // Activate clicked button
+        // Activate tab
         tab.classList.add("active");
-
-        // Show corresponding content
         const target = document.getElementById(tab.dataset.tab);
         target.classList.add("active");
+
+        // Remove old background classes
+        bottomSection.classList.remove("bg-unity", "bg-blender", "bg-info");
+
+        // Add new background class
+        bottomSection.classList.add(`bg-${tab.dataset.tab}`);
     });
 });
