@@ -30,9 +30,30 @@ html, body {
 }
 .bottom-section {
     min-height: 100vh;
-    background: beige;  
     padding: 40px;
     box-sizing: border-box;
+
+    background-size: 120px; /* tile size */
+    background-repeat: repeat;
+    background-position: center;
+
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+/* Different backgrounds per tab */
+.bg-unity {
+    background-image: url("images/patterns/unity.png");
+    background-color: #FFB703;
+}
+
+.bg-blender {
+    background-image: url("images/patterns/blender.png");
+    background-color: #FFB703;
+}
+
+.bg-info {
+    background-image: url("images/patterns/info.png");
+    background-color: #FFB703;
 }
 
 .projects-header {
