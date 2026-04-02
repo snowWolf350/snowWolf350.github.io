@@ -32,6 +32,7 @@ html, body {
     min-height: 100vh;
     padding: 40px;
     box-sizing: border-box;
+    position: relative;
 
     background-size: 120px; /* tile size */
     background-repeat: repeat;
