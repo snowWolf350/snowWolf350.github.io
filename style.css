@@ -111,3 +111,36 @@ h2{
 p{
     font-size : 1.5rem;
 }
+.tab {
+    padding: 12px 35px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #b4f06d;
+    font-size: 2rem;
+
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover = float + glow */
+.tab:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 255, 100, 0.4);
+}
+
+/* Click = press down */
+.tab:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Active tab stays highlighted */
+.tab.active {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
