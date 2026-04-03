@@ -55,12 +55,12 @@ html, body {
 /* Different backgrounds per tab */
 .bg-unity {
     background-image: url("images/patterns/unity.png");
-    background-color: rgba(255, 183, 3, 0.4); /* 👈 transparency */
+    background-color: rgba(255, 183, 3, 1); /* 👈 transparency */
 }
 
 .bg-blender {
     background-image: url("images/patterns/blender.png");
-    background-color: rgba(255, 183, 3, 0.4);
+    background-color: rgba(255, 183, 3, 1);
 }
 
 .bg-info {
