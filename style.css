@@ -40,7 +40,18 @@ html, body {
 
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
+.bottom-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
 
+.bottom-section > * {
+    position: relative;
+    z-index: 1;
+}
 /* Different backgrounds per tab */
 .bg-unity {
     background-image: url("images/patterns/unity.png");
