@@ -1,1 +1,8 @@
-
+body{
+    background-color: #252422;
+}
+.char_info{
+    text-align: center;
+    border: 2px solid #ccc5b9;
+    color: #fffcf2;
+}
