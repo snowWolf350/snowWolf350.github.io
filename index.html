@@ -1,16 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Page Title</title>
+<head>
+    <title>Status Window</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class = "char_info">
-      <h2>Pranet V</h2>
-      <p>Game Developer|Creator|Student</p>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- LEFT PANEL -->
+        <div class="left_panel">
+
+            <div class="profile_card">
+                <h2>Pranet V</h2>
+                <p>Game Developer | Creator | Student</p>
+
+                <img src="images/info/char_Sheet.png" alt="Character">
+
+                <div class="stat">
+                    <span>HP</span>
+                    <div class="bar">
+                        <div class="fill hp"></div>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <span>Mood</span>
+                    <div class="bar">
+                        <div class="fill mood"></div>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <span>Focus</span>
+                    <div class="bar">
+                        <div class="fill focus"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right_panel">
+
+            <div class="box">
+                <h3>Daily Quest</h3>
+                <p>Finish Platformer Enemy AI</p>
+            </div>
+
+            <div class="box">
+                <h3>Current Rank</h3>
+                <p>Level 6 Developer</p>
+            </div>
+
+            <div class="box">
+                <h3>Mana Recovery</h3>
+                <p>Listening to Steins;Gate OST</p>
+            </div>
+
+        </div>
+
     </div>
-    <div id ="content">
-      <img src ="images/info/char_Sheet.png" size = "100px">
-    </div>
-  </body>
-</html>   
+
+</body>
+</html>
