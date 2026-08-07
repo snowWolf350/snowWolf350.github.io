@@ -1,69 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Status Window</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="dashboard">
+    <!-- Hero -->
+    <section class="hero">
+        <img src="images/intro.jpg" alt="Intro Image">
+    </section>
 
-        <!-- LEFT PANEL -->
-        <div class="left_panel">
+    <!-- About Section -->
+    <section class="section">
 
-            <div class="profile_card">
-                <h2>Pranet V</h2>
-                <p>Game Developer | Creator | Student</p>
+        <div class="content">
+            <div class="image-box">
+                <img src="images/unity.png" alt="">
+            </div>
 
-                <img src="images/info/char_Sheet.png" alt="Character">
+            <div class="text-box">
+                <h2>Game Development</h2>
+                <p>
+                    I've been developing games using Unity for several years,
+                    creating projects ranging from game jams to personal
+                    experiments while continuously learning new systems and
+                    workflows.
+                </p>
+            </div>
+        </div>
 
-                <div class="stat">
-                    <span>HP</span>
-                    <div class="bar">
-                        <div class="fill hp"></div>
-                    </div>
-                </div>
+        <div class="content reverse">
 
-                <div class="stat">
-                    <span>Mood</span>
-                    <div class="bar">
-                        <div class="fill mood"></div>
-                    </div>
-                </div>
+            <div class="text-box">
+                <h2>3D Art & Blender</h2>
+                <p>
+                    I enjoy creating stylized environments, props and animations
+                    in Blender while learning efficient game-ready workflows.
+                </p>
+            </div>
 
-                <div class="stat">
-                    <span>Focus</span>
-                    <div class="bar">
-                        <div class="fill focus"></div>
-                    </div>
-                </div>
-
+            <div class="image-box">
+                <img src="images/blender.png" alt="">
             </div>
 
         </div>
 
-        <!-- RIGHT PANEL -->
-        <div class="right_panel">
+    </section>
 
-            <div class="box">
-                <h3>Daily Quest</h3>
-                <p>Finish Platformer Enemy AI</p>
+
+    <!-- Tools -->
+    <section class="tools">
+
+        <h1>Tools I Use</h1>
+
+        <div class="tool-grid">
+
+            <div class="tool-card">
+                <img src="images/unity-logo.png" alt="">
             </div>
 
-            <div class="box">
-                <h3>Current Rank</h3>
-                <p>Level 6 Developer</p>
+            <div class="tool-card">
+                <img src="images/blender-logo.png" alt="">
             </div>
 
-            <div class="box">
-                <h3>Mana Recovery</h3>
-                <p>Listening to Steins;Gate OST</p>
+            <div class="tool-card">
+                <img src="images/photoshop-logo.png" alt="">
+            </div>
+
+            <div class="tool-card">
+                <img src="images/github-logo.png" alt="">
             </div>
 
         </div>
 
-    </div>
+    </section>
+
+
+    <!-- Social -->
+    <footer>
+
+        <h1>My Socials</h1>
+
+        <div class="socials">
+
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
