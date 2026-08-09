@@ -18,43 +18,208 @@
         <img src="images/info/final.png" alt="Intro Image">
     </section>
 
-    <!-- About Section -->
-    <section class="section">
+    <!-- ================= GAME DEVELOPMENT ================= -->
 
-        <div class="content">
-            <div class="image-box">
-                <img src="images/unity.png" alt="">
+<section class="portfolio-section">
+
+    <div class="section-heading">
+        <h1>Game Development</h1>
+
+        <p>
+            I've been creating games with Unity, experimenting with
+            gameplay systems, programming, level design and game jams.
+        </p>
+    </div>
+
+
+    <div class="carousel">
+
+        <button class="carousel-button left" onclick="scrollCarousel('game-carousel', -1)">
+            &#10094;
+        </button>
+
+
+        <div class="project-container" id="game-carousel">
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-media">
+                    <img src="images/game1.jpg" alt="Game project">
+                </div>
+
+                <div class="project-info">
+
+                    <h2>Project One</h2>
+
+                    <p>
+                        A short description about the game, what I worked on,
+                        the mechanics I created and what I learned while
+                        developing it.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="text-box">
-                <h2>Game Development</h2>
-                <p>
-                    I've been developing games using Unity for several years,
-                    creating projects ranging from game jams to personal
-                    experiments while continuously learning new systems and
-                    workflows.
-                </p>
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-media">
+                    <img src="images/game2.jpg" alt="Game project">
+                </div>
+
+                <div class="project-info">
+
+                    <h2>Project Two</h2>
+
+                    <p>
+                        Another project description. You can talk about
+                        programming, gameplay systems, art, level design,
+                        or anything interesting about the project.
+                    </p>
+
+                </div>
+
             </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-media">
+                    <img src="images/game3.jpg" alt="Game project">
+                </div>
+
+                <div class="project-info">
+
+                    <h2>Project Three</h2>
+
+                    <p>
+                        Description of another game or game jam project.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="content reverse">
 
-            <div class="text-box">
-                <h2>3D Art & Blender</h2>
-                <p>
-                    I enjoy creating stylised and realistic environments, props and animations
-                    in Blender while learning efficient game-ready workflows.
-                </p>
+        <button class="carousel-button right" onclick="scrollCarousel('game-carousel', 1)">
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= 3D ART ================= -->
+
+<section class="portfolio-section">
+
+    <div class="section-heading">
+
+        <h1>3D Art</h1>
+
+        <p>
+            I use Blender to create environments, props, characters,
+            animations and other 3D experiments.
+        </p>
+
+    </div>
+
+
+    <div class="carousel">
+
+        <button class="carousel-button left" onclick="scrollCarousel('art-carousel', -1)">
+            &#10094;
+        </button>
+
+
+        <div class="project-container" id="art-carousel">
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-media">
+                    <img src="images/blender1.jpg" alt="Blender project">
+                </div>
+
+                <div class="project-info">
+
+                    <h2>3D Environment</h2>
+
+                    <p>
+                        A Blender environment I created while experimenting
+                        with lighting, materials and composition.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="image-box">
-                <img src="images/blender.png" alt="">
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-media">
+                    <img src="images/blender2.jpg" alt="Blender project">
+                </div>
+
+                <div class="project-info">
+
+                    <h2>Character Project</h2>
+
+                    <p>
+                        A character created in Blender including modelling,
+                        materials and animation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-media">
+                    <img src="images/blender3.jpg" alt="Blender project">
+                </div>
+
+                <div class="project-info">
+
+                    <h2>Animation</h2>
+
+                    <p>
+                        An animation project exploring movement, timing,
+                        camera work and rendering.
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
 
-    </section>
 
+        <button class="carousel-button right" onclick="scrollCarousel('art-carousel', 1)">
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
 
     <!-- Tools -->
     <section class="tools">
@@ -88,6 +253,6 @@
         </div>
 
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
