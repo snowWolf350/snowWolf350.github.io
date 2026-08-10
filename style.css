@@ -19,11 +19,10 @@ body{
     height:100vh;
 }
 
-.hero img{
-
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -207,19 +206,25 @@ footer h1{
         height: 60vh;
     }
 
-}/* =========================================
-   ORANGE SCROLLBAR
+}
+/* =========================================
+   CLEAN ORANGE SCROLLBAR
 ========================================= */
 
 html {
     scrollbar-color: #f5a623 transparent;
-    scrollbar-width: auto;
+    scrollbar-width: thin;
 }
 
-/* Chrome / Edge */
+/* Firefox */
+html,
+body {
+    scrollbar-color: #f5a623 transparent;
+}
 
+/* Chrome / Edge / Chromium */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
