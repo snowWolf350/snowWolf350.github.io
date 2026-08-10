@@ -207,24 +207,23 @@ footer h1{
         height: 60vh;
     }
 
-}
-/* =========================================
-   ORANGE PAGE SCROLLBAR
+}/* =========================================
+   ORANGE SCROLLBAR
 ========================================= */
 
 html {
-    scrollbar-color: #f5a623 #f5f5f5;
+    scrollbar-color: #f5a623 transparent;
     scrollbar-width: auto;
 }
 
-/* Chrome / Edge / other WebKit browsers */
+/* Chrome / Edge */
 
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f5f5f5;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -456,4 +455,51 @@ html {
 .carousel-button.right {
 
     right: 25px;
+}
+
+/* =========================================
+   SCROLL ANIMATION
+========================================= */
+
+.project-media {
+    opacity: 0;
+    transform: translateX(-80px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.project-info {
+    opacity: 0;
+    transform: translateX(80px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+/* When the project becomes visible */
+
+.project-card.show .project-media,
+.project-card.show .project-info {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Reverse direction for 3D Art */
+
+.project-card.reversed .project-media {
+    transform: translateX(80px);
+}
+
+.project-card.reversed .project-info {
+    transform: translateX(-80px);
+}
+
+.project-card.reversed.show .project-media,
+.project-card.reversed.show .project-info {
+    transform: translateX(0);
 }
