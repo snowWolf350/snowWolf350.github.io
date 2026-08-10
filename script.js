@@ -49,3 +49,36 @@ projectCards.forEach((card) => {
     observer.observe(card);
 
 });
+// =========================================
+// BACKGROUND MUSIC
+// =========================================
+
+const backgroundMusic = document.getElementById("backgroundMusic");
+const musicButton = document.getElementById("musicButton");
+
+let musicPlaying = false;
+
+
+// Play / pause music
+
+musicButton.addEventListener("click", () => {
+
+    if (musicPlaying) {
+
+        backgroundMusic.pause();
+
+        musicButton.textContent = "♪";
+
+        musicPlaying = false;
+
+    } else {
+
+        backgroundMusic.play();
+
+        musicButton.textContent = "♫";
+
+        musicPlaying = true;
+
+    }
+
+});
