@@ -70,3 +70,11 @@ musicButton.addEventListener("click", () => {
         musicButton.querySelector(".music-icon").classList.add("muted");
     }
 });
+const buttonSfx = document.getElementById("buttonSfx");
+
+document.querySelectorAll("button").forEach(button => {
+    button.addEventListener("click", () => {
+        buttonSfx.currentTime = 0;
+        buttonSfx.play();
+    });
+});
