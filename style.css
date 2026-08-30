@@ -513,7 +513,7 @@ body {
    MUSIC BUTTON
 ========================================= */
 
-..music-button {
+.music-button {
     position: fixed;
 
     bottom: 25px;
