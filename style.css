@@ -513,18 +513,63 @@ body {
    MUSIC BUTTON
 ========================================= */
 
+..music-button {
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f5a623;
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s ease;
+}
+
+.music-button:hover {
+    transform: scale(1.1);
+    background: #e89413;
+}
+
+
+/* Music note */
+
 .music-icon {
     position: relative;
     display: inline-block;
+    line-height: 1;
 }
+
+
+/* Slash when muted */
 
 .music-icon.muted::after {
     content: "";
+
     position: absolute;
+
     width: 2px;
     height: 30px;
+
     background: white;
+
     left: 50%;
     top: 50%;
+
     transform: translate(-50%, -50%) rotate(-45deg);
 }
