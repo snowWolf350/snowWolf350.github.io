@@ -62,23 +62,11 @@ let musicPlaying = false;
 // Play / pause music
 
 musicButton.addEventListener("click", () => {
-
-    if (musicPlaying) {
-
-        backgroundMusic.pause();
-
-        musicButton.textContent = "♪";
-
-        musicPlaying = false;
-
+    if (music.paused) {
+        music.play();
+        musicButton.querySelector(".music-icon").classList.remove("muted");
     } else {
-
-        backgroundMusic.play();
-
-        musicButton.textContent = "♫";
-
-        musicPlaying = true;
-
+        music.pause();
+        musicButton.querySelector(".music-icon").classList.add("muted");
     }
-
 });
