@@ -53,22 +53,20 @@ projectCards.forEach((card) => {
 // BACKGROUND MUSIC
 // =========================================
 
-const backgroundMusic = document.getElementById("backgroundMusic");
+const music = document.getElementById("backgroundMusic");
 const musicButton = document.getElementById("musicButton");
-
-let musicPlaying = false;
-
-
-// Play / pause music
+const musicIcon = musicButton.querySelector(".music-icon");
 
 musicButton.addEventListener("click", () => {
+
     if (music.paused) {
         music.play();
-        musicButton.querySelector(".music-icon").classList.remove("muted");
+        musicIcon.classList.remove("muted");
     } else {
         music.pause();
-        musicButton.querySelector(".music-icon").classList.add("muted");
+        musicIcon.classList.add("muted");
     }
+
 });
 const buttonSfx = document.getElementById("buttonSfx");
 
@@ -78,3 +76,4 @@ document.querySelectorAll("button").forEach(button => {
         buttonSfx.play();
     });
 });
+
